@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <title>hello-world</title>
+  </head>
+  <body>
+    <h1>Hello, {{user_info.nickname}}!</h1>
+    <table border="1">
+      <tr>
+        <th>nickname</th>
+        <th>sex</th>
+        <th>country</th>
+        <th>province</th>
+        <th>city</th>
+      </tr>
+      <tr>
+        <td>{{user_info.nickname}}</td>
+        {% if user_info.sex is sameas 1 %}
+        <td>male</td>
+        {% else %}
+        <td>female</td>
+        {% endif %}
+        <td>{{user_info.country}}</td>
+        <td>{{user_info.province}}</td>
+        <td>{{user_info.city}}</td>
+      </tr>
+    </table>
+  </body>
+</html>
