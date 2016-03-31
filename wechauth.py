@@ -1,9 +1,9 @@
 # coding=utf-8
 #!/usr/bin/python
-"""script for redis with url interface
+"""script for wechauth
 """
 
-from flask import Flask, request, json, abort, jsonify
+from flask import Flask, request
 from flask import Blueprint
 from flask import render_template
 import json
