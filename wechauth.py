@@ -48,5 +48,6 @@ if __name__ == '__main__':
     app = Flask(__name__)
     app.debug = True
     app.register_blueprint(wechauth_blueprint)
+    # Running ,and listen to 80 port
     app.run(host="45.78.62.125", port=80)
 
